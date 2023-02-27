@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: pieza_data
+    description: Pieza sales data uploaded as .csv data in BigQuery
+    database: dabc8-practice
+    schema: pieza_data
+    tables: 
+      - name: lnd_lazada
+        description: Raw sales data from lazada starting from 2021 and should be updated the more data is generated over time.
+      - name: lnd_shopee
+        description: Raw sales data from shopee starting from 2021 and should be updated the more data is generated over time.
+      - name: lnd_socials
+        description: Raw sales data from Pieza's social accounts from 2021 and should be updated the more data is generated over time.
+    
